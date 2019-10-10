@@ -1,7 +1,4 @@
 const io = require('socket.io-client');
 const socket = io.connect('http://localhost:7890');
 
-socket.on('hello', () => {
-  console.log('I Love Colonel Sanders');
-  socket.emit('Word');
-});
+socket.emit('logger');
