@@ -1,7 +1,7 @@
 {
-  "name": "fsjs-e2e-route-model-quiz",
+  "name": "socket.lab",
   "version": "1.0.0",
-  "description": "FSJS: E2E Testing of Routes and Models ===",
+  "description": "",
   "main": "server.js",
   "directories": {
     "lib": "lib"
@@ -38,13 +38,5 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hello-jelly/fsjs-e2e-route-model-quiz.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hello-jelly/fsjs-e2e-route-model-quiz/issues"
-  },
-  "homepage": "https://github.com/hello-jelly/fsjs-e2e-route-model-quiz#readme"
+  }
 }
