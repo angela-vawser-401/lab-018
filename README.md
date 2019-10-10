@@ -1,4 +1,6 @@
-FSJS: E2E Testing of Routes and Models
+# Lab 018
+## Socket.io
+### Author: Angela Vawser
 ===
 
 1. You can use any online resources and refer to any of your prior work, including paired work. Other students' work is off-limits.
