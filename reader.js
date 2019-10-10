@@ -5,7 +5,7 @@ const data = { path: process.argv[2] };
 
 fileRead(process.argv[2])
   .then(results => {
-    data.copy = results;
+    data.content = results;
     socket.emit('file-read', data);
   })
   .catch(error => {
