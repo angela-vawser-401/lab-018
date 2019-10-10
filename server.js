@@ -8,6 +8,12 @@ io.on('connection', socket => {
   socket.on('capitalize', data => {
     console.log(data);
   });
+  socket.on('file-write', data => {
+    console.log(data);
+  });
+  socket.on('file-saved', data => {
+    console.log(data);
+  });
   socket.on('file-error', error => {
     console.log(error);
   });

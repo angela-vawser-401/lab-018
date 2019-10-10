@@ -1,13 +1,10 @@
 const io = require('socket.io-client');
 const socket = io.connect('http://localhost:7890');
-const fileSaved = require('./file-saved');
+const writeFile = require('./file-write');
 
-fileSaved(process.argv[2])
-  .then(data => {
-    socket.emit('file-read', data);
-  })
-  .catch(error => {
-    socket.emit('file-error', error);
+writeFile('./new-text.txt', 'Wooooooord to your Mother')
+  .then(() => {
+    socket.on('file-write', data => {
+      socket.emit('file-save', data);
+    });
   });
-
-// Writes it back to the file system
